@@ -1,7 +1,9 @@
 # Human-activity-recognition-using-smartphones-sensors
 
-Topic:Human Activity Recognition using Smartphone Sensors
+
 Introduction
+
+
 These days we can't imagine our lives without Smartphones.Smartphone sensors use various
 sensors to enhance user experience. Two of the sensors are Accelerometer and Gyrometer.
 Accelerometer measures acceleration while Gyroscope measures angular velocity. So we
@@ -17,10 +19,16 @@ the directions of all the three axes(X,Y&Z). After getting these well-arranged d
 performed our HAR(Human Activity Recognition) analysis by implementing the corresponding
 functions embedded in our code. Also it has to be noted that the obtained dataset has been
 randomly partitioned into two sets,whereas 70% of the volunteers have been selected for
-generating the training data and 30% for preparing the test data.
+generating the training data and 30% for preparing the test data
+
+
 Link for data sources:
 https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones
+
+
+
 MODEL FORMULATION
+
 We make an LSTM model to predict the Human Activities.LSTM works well on time-series data,
 so we have decided that we apply LSTM of Recurrent Neural Networks on 128 sized raw
 readings that we obtained from accelerometer and Gyroscope signals.
@@ -28,7 +36,11 @@ Metrics To Be Used To Check Performance’s Precision:
 We use Accuracy as one of the metric.We use Confusion-Matrix to check that in which two
 activities our model is confused and predicting incorrect activity. For example ,between
 Standing-Up and Sitting-Down. Between Walking -Upstairs and Walking-Downstairs.
+
+
 Detailed Action Plan:
+
+
 ● So first we started with importing all the important libraries required for the project. These
 libraries were namely:
 numpy,pandas,seaborn,matplotlib.pyplot,sklearn.manifold,warnings,datetime,GridSearch
