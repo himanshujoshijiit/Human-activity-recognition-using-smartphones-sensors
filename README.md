@@ -47,35 +47,61 @@ numpy,pandas,seaborn,matplotlib.pyplot,sklearn.manifold,warnings,datetime,GridSe
 CV,confusion_matrix,accuracy_score,Logistic_Regression,LInear
 SVC,SVC,DecisionTreeClassifier,RandomForestClassifier,GradientBoostingClassifier,Se
 quential,LSTM,Dense,Dropout,Trials,STATUS_OK,tpe,optim,choice,uniform.
+
+
 ● Then we extracted features from Features.txt file
+
+
 ● Then we read the training and test data as training data is used to train the model to get
 accurate predictions and test data is used to test the model.
+
+
 ● Then we looked for removing the duplicate and null values in data(if present).Also we
 checked if there is any imbalance in data.
+
+
 ● We visualized the balance in data by plotting the graphs like Count v/s Subject ID and
 Count v/s Different Human Activities.
+
+
 ● Then we explored feature information from our previous knowledge. We categorised the
 motion into two categories - Static and Dynamic.
 Static includes Sitting,Standing,Lying and Dynamic includes Walking Upstairs,Walking
 Downstairs and normal walking.
+
+
 ● Then we plotted two graphs which observed that the magnitude of the mean of the
 body's acceleration in the time domain measured by the accelerometer is able to
 separate static activity from dynamic activity.
+
+
 ● So we applied the TSNE plot to data for better visualization and to get a better
 perplexity. So using this, we obtained different sets of data points corresponding to
 different human activities. From T SNE plots, we can observe that except Standing and
 Sitting all other activities are separated fairly well.
+
+
 ● For better understanding, we applied following models and compared their accuracies
 accordingly:-
+
+
 ❏ We first applied Logistic Regression and made three matrices namely Confusion
 Matrix, Precision matrix and Recall Matrix.
+
+
 ❏ Then we applied Linear SVM and also made three matrices for this model also:
 namely Confusion Matrix, Precision matrix and Recall Matrix.
+
+
 ❏ Also we applied Decision Tree and made three matrices Confusion,Precision and
 Recall Matrix.
+
+
 ❏ Then we applied the deep learning LSTM Model where we used raw readings
 obtained from accelerometer and gyroscope signals and tuned Hyper-parameters
 using Hyperas and used the best Hyper Parameters.
+
+
 ● Then we compared the accuracies of all the models used and found that the LSTM
 Model gave the good predictions even when we didn't have domain expert engineered
 features.
